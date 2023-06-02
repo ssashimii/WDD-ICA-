@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Conference</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="head">
+        <div class="carousel">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-image bg-img-1 active">
+              </div>
+              <div class="carousel-item carousel-image bg-img-2">
+              </div>
+              <div class="carousel-item carousel-image bg-img-3">
+              </div>
+              <div class="carousel-item carousel-image bg-img-4">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay">
+          <div class="title">
+            <h1>the future is now</h1>
+            <h2>School of Media and IT</h2>
+            <p>Mini Conference in AI</p>
+            <a class="btn" href="#form">get a seat now</a>
+          </div>
+          <div class="about">
+            <h3>May 26th 2023 | 9:00am – 18:00pm</h3>
+            <p>Explore the diverse applications of AI, the challenges and opportunities that come with its development, and how it can be leveraged to make a positive impact on society. We look forward to engaging in meaningful conversations that will further the progress of AI and its potential to shape the future.</p>
+          </div>
+        </div>
+      </div>
+        <div class="timetable">
+            <h2 class="subtitle">TIMETABLE</h2>
+            <table>
+                <tr>
+                  <th>TIME</th>
+                  <th>EVENT</th>
+                </tr>
+                <tr>
+                  <td>8:00am - 9:00am:</td>
+                  <td>Doors open for registration</td>
+                </tr>
+                <tr>
+                  <td>9:00am - 9:30am:</td>
+                  <td>Opening remarks</td>
+                </tr>
+                <tr>
+                    <td>9:30am - 10:30am:</td>
+                    <td><a href="#speakers">Mark Anderson</a>: Introduction to AI</td>
+                  </tr>
+                  <tr>
+                    <td>10:30am - 11:30am:</td>
+                    <td><a href="#speakers">Sarah Johnson</a>: AI Applications in Healthcare</td>
+                  </tr>
+                  <tr>
+                    <td>11:30am - 12:30pm:</td>
+                    <td>Workshop 1: Developing AI Algorithms</td>
+                  </tr>
+                  <tr>
+                    <td>12:30pm - 1:30pm:</td>
+                    <td>Lunch</td>
+                  </tr>
+                  <tr>
+                    <td>1:30pm - 2:30pm:</td>
+                    <td><a href="#speakers">Jennifer Williams</a>: Machine Learning</td>
+                  </tr>
+                  <tr>
+                    <td>2:30pm - 3:30pm:</td>
+                    <td><a href="#speakers">Andrew Smith</a>: Natural Language Processing</td>
+                  </tr>
+                  <tr>
+                    <td>3:30pm - 4:30pm:</td>
+                    <td>Workshop 2: Implementing AI in Business</td>
+                  </tr>
+                  <tr>
+                    <td>4:30pm - 5:30pm:</td>
+                    <td><a href="#speakers">Rebecca Jones</a>: AI and the Future</td>
+                  </tr>
+                  <tr>
+                    <td>5:30pm - 6:00pm:</td>
+                    <td>Closing remarks and networking</td>
+                  </tr>
+              </table>
+        </div>
+
+        <div id="speakers">
+            <h2 class="subtitle">SPEAKERS</h2>
+            <div class="cards">
+
+              <div class="row1">
+                <div class="card">
+                  <div class="card-fore">
+                    <img src="img/man1.jpg" alt="">
+                  </div>
+                  <div class="card-back">
+                    <p class="name">Mark Anderson <span>AI specialist. He has been working for 10 years in IT field</span></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-fore">
+                    <img src="img/woman1.jpg" alt="">
+                  </div>
+                  <div class="card-back">
+                    <p class="name">Sarah Johnson <span>AI specialist. She has been working for 10 years in IT field</span></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-fore">
+                    <img src="img/woman2.jpg" alt="">
+                  </div>
+                  <div class="card-back">
+                    <p class="name">Jennifer Williams <span>AI specialist. She has been working for 10 years in IT field</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row2">
+                <div class="card">
+                  <div class="card-fore">
+                    <img src="img/man2.jpg" alt="">
+                  </div>
+                  <div class="card-back">
+                    <p class="name">Andrew &nbsp;&nbsp;Smith <span>AI specialist. He has been working for 10 years in IT field</span></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-fore">
+                    <img src="img/woman 3.jpg" alt="">
+                  </div>
+                  <div class="card-back">
+                    <p class="name">Rebecca Jones <span>AI specialist. She has been working for 10 years in IT field</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+          <img src="img/pcu-logo.png" alt="">
+        </div>
+
+        <div class="footer">
+
+          <div class="map">
+            <h2 class="subtitle">LOCATION</h2>
+            <div class="info">
+              <p>Prague City University</p>
+              <p>City Centre Campus</p>
+              <p>Hybernská 24, Praha 1, Czech Republic</p>
+            </div>
+            <div id="map"></div>
+          </div>
+
+          <div id="form">
+            <h2 class="subtitle">FORM</h2>
+            <form action="">
+              <div>
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <label for="name">name</label>
+                    <textarea name="name" id="name" required placeholder="type name here"></textarea>
+                </div>
+                <div>
+                    <button type="reset" id="reset">Reset</button>
+                    <button type="submit" id="submit">Submit</button>
+        
+                </div>
+            </form>
+            <h2 class="subtitle-socials">SEE MORE INFO IN OUR</h2>
+            <h2>SOCIAL MEDIA</h2>
+            <div class="socials">
+              <div class="row1">
+                <a href="https://www.instagram.com/praguecityuniversity/"><img src="img/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/PragueCityUniversity"><img src="img/facebook.png" alt=""></a>
+                <a href="https://twitter.com/PragueCityUni"><img src="img/twitter.png" alt=""></a>
+              </div>
+              <div class="row2">
+                <a href="https://www.youtube.com/channel/UCtJM41jXN0JSVFM2pxuAzGw"><img src="img/youtube.png" alt=""></a>
+                <a href="https://www.linkedin.com/school/prague-city-university/"><img src="img/linkedin.png" alt=""></a>
+                <a href="https://www.flickr.com/photos/praguecityuniversity/albums"><img src="img/flickr.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
